@@ -1,0 +1,455 @@
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/*------ENCABEZADO*/
+
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #e2eaff;
+    color: #101632dd;
+}
+
+body, div, header, footer, label{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    background-color: #fff;
+    font-size: 20px;
+}
+
+.header__logo{
+    max-width: 100%;
+    width: 180px;
+    margin: 12px 12px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.contenedor nav{
+    margin-left: 399px;
+    align-items: center;
+    flex-direction: column;
+    margin-top: -72px;
+    padding: 12px 12px;
+}
+
+.contenedor nav a{
+    text-decoration: none;
+    color: #18233f;
+    font-size: 26px;
+    transition: color .4s ease;
+    margin-left: 20px;
+}
+
+.contenedor nav a:hover{
+    color: #48e;
+}
+
+
+/*------FIN DEL ENCABEZADO */
+
+
+
+/*------ICONOS */
+
+
+.ico{
+    cursor: pointer;
+}
+
+
+.busqueda__ico{
+    width:32px; 
+    height:32px;
+    position: absolute;top: 3%;
+    position: absolute;left: 83%;
+}
+
+.notificacion__ico{
+    width:32px; 
+    height:32px;
+    position: absolute;top: 3%;
+    position: absolute;left: 87%;
+}
+
+.Compra__ico{
+    width:32px; 
+    height:32px;
+    position: absolute;top: 3%;
+    position: absolute;left: 91%;
+}
+
+.menu__ico{
+    width:32px; 
+    height:32px;
+    position: absolute;top: 3%;
+    position: absolute;left: 95%;
+}
+
+/*------FIN DE ICONOS */
+
+
+
+
+
+
+/*------PERFIL------*/
+
+.perfil{
+    container-name: perfil;
+    container-type: inline-size;
+}
+
+.perfil__envoltura{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    background-color: #fff;
+    max-width: 1400px;
+}
+
+.perfil__datos-contenedor{
+    max-width: 580px;
+    height: 500px;
+    padding: 12px;
+}
+
+
+.perfil__img-contenedor{
+    height: 500px;
+    overflow: hidden;
+
+}
+
+.perfil__img{
+    max-width: 100%;
+    width: 720px;
+}
+
+h1{
+    color: #26a;
+}
+
+
+.perfil__habilidades-contenedor h2{
+    color: #26a;
+}
+
+.perfil__habilidad{
+    list-style: none;
+    display: flex;
+    margin: 10px;
+    max-width: 600px;
+    margin-left: 20px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.carga-barra{
+
+    border: 2px solid #48e;
+    border-radius: 8px;
+    color: #fff;
+    padding: 2px;
+    font-size: 12px;
+    width: 80%;
+    margin: 4px;
+    margin-left: 0;
+}
+
+.perfil__habilidad-nombre{
+    color: rgb(31, 68, 122);
+}
+
+.carga-barra__barra{
+    background-color: rgb(31, 68, 122);
+    border-radius: 4px;
+    padding: 4px 6px;
+}
+
+.barra--97{
+    width: 97%;
+}
+
+.barra--91{
+    width: 91%;
+}
+
+.barra--62{
+    width: 62%;
+}
+
+.barra--17{
+    width: 17%;
+}
+
+.barra--89{
+    width: 89%;
+}
+
+
+
+/*------PERFIL------*/
+
+@container perfil (min-width:720px){
+    .perfil__envoltura{
+        flex-direction: row;
+        padding: 20px;
+        background-color: transparent;
+        height: 60vh;
+        margin: auto;
+    }
+
+    .perfil__datos-contenedor{
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        border-radius: 0px 25px 25px 0px;
+        box-shadow: 3px 6px 9px #0002;
+    }
+
+    h1{
+        margin-top: 25px;
+        font-size: 22px;
+        text-wrap: balance;
+    }
+
+    .perfil__datos{
+        max-width: 620px;
+    }
+
+    .perfil__img-contenedor{
+        max-height: initial;
+        border-radius: 25px 0px 0px 25px;
+    }
+
+    .perfil__img{
+        height: 100%;
+        object-fit: center;
+        width: 620px;
+
+    }
+}
+/*------FIN DEL PERFIL ------*/
+
+
+/*------PORTAFOLIO------*/
+
+.portafolio{
+    background-color: #18233f;
+    color: #fff;
+    min-height: 100vh;
+    display: grid;
+    flex-direction: column;
+    text-align: center;
+    container-name: portafolio;
+    container-type: inline-size;
+    justify-content: space-evenly;
+}
+
+.portafolio__titulo{
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+
+.portafolio__proyecto-contenedor{
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 1300px;
+    margin: auto;
+    width: 100%;
+    gap: 12px;
+    padding: 12px;
+    min-height: 90vh;
+}
+
+.portafolio__proyecto{
+    background-position: center;
+    background-size: cover;
+    place-content: center;
+    border-radius: 8px;
+}
+
+.proyecto-1{
+    width: 600px;
+    height: 300px;
+    border: 2px solid #fff;
+    cursor: pointer;
+}
+.proyecto-2{
+    width: 600px;
+    height: 300px;
+    border: 2px solid #fff;
+    cursor: pointer;
+}
+
+.proyecto-3{
+    width: 600px;
+    height: 300px;
+    border: 2px solid #fff;
+    cursor: pointer;
+}
+
+.proyecto-4{
+    width: 600px;
+    height: 300px;
+    border: 2px solid #fff;
+    cursor: pointer;
+}
+
+.proyecto-5{
+    width: 600px;
+    height: 300px;
+    border: 2px solid #fff;
+    cursor: pointer;
+}
+.proyecto-6{
+    width: 600px;
+    height: 300px;
+    border: 2px solid #fff;
+    cursor: pointer;
+}
+
+
+.portafolio__proyecto:hover{
+    opacity: 0.74;
+    outline: 2px solid #fff6;
+}
+
+
+@container portafolio (min-width: 56.25rem){
+    .portafolio__proyecto-contenedor{
+        grid-template-columns: repeat(auto-fill,minmax(420px,1fr));
+    }
+    .portafolio__proyecto:first-child{
+        grid-column: span 2;
+    }
+    .portafolio__proyecto:nth-child(6){
+        grid-column: span 2;
+    }
+}
+
+
+@container proyecto (min-width: 81.25rem){
+    .portafolio__proyecto-contenedor{
+        grid-template-columns: repeat(auto-fill,minmax(30px,1fr));
+    }
+    .portafolio__proyecto:first-child{
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+    .portafolio__proyecto:nth-child(6){
+        grid-column: span 4;
+    }
+}
+
+/*------ FIN DEL PORTAFOLIO ------*/
+
+
+
+
+/*------CONTACTO ------*/
+
+.form{
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+    container-name: form;
+    container-type: inline-size;
+    
+}
+
+.form__form{
+    flex: 1;
+    max-width: 600px;
+    width: 100%;
+    display: grid;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+label{
+    margin-left: 10px;
+}
+
+.form__input-contenedor :is(input,textarea){
+    width: 96%;
+    padding: 9px;
+    font-size: 16px;
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+}
+
+.form__input-contenedor textarea{
+    resize: none;
+    min-height: 120px;
+    font-family: inherit;
+}
+
+.form__input-contenedor input[type="submit"]{
+    padding: 12px;
+    background-color: #48e;
+    color: #fff;
+    border-radius: 20px;
+    width: 50%;
+    margin-left: 137px;
+}
+
+.form__titulo{
+    font-size: 2.6rem;
+}
+
+@container form (min-width:56.25rem){
+
+    .form__form{
+        background-color:#ccc;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 2px 5px 5px 6px #18233f36;
+    }
+}
+
+/*------FIN CONTACTO------*/
+
+
+/*------WHATSAPP------*/
+
+.apartado_Whatsapp{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.Whatsapp{
+    position: fixed;
+    width: 55px; 
+    height: 55px;
+    line-height: 55px;
+    bottom: 25px;
+    right: 25px;
+}
+/*------FIN DEL WHATSAPP------*/
+
+
+
+/*------FOOTER------*/
+footer{
+    padding: 15px;
+    text-align: center;
+    background-color: #18233f;
+    color: #fffdff;
+    font-size: 17px;
+}
+
+
+/*------FIN FOOTER------*/
